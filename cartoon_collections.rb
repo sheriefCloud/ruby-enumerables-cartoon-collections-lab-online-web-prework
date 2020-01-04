@@ -17,9 +17,9 @@ def long_planeteer_calls(calls_array)
 end
 
 def find_the_cheese(food_array)
-
+    value = nil
     cheese_types = ["cheddar", "gouda", "camembert"]
-    food_array.any? { |item| cheese_types.any? { |item| item  }  }
+    food_array.any? { |item| cheese_types.any? { |item| value = item  }  }
 
-    return item
+    return value
 end
