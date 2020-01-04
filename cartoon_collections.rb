@@ -17,10 +17,10 @@ def long_planeteer_calls(calls_array)
 end
 
 def find_the_cheese(food_array)
-    
+
     cheese_types = ["cheddar", "gouda", "camembert"]
 
     food_array.any?  |item|  do
       cheese_types.any? { |chesse| item == cheese  }
-    end 
+    end
 end
