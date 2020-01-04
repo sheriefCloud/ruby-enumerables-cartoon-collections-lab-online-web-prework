@@ -20,6 +20,7 @@ def find_the_cheese(cheese_array)
 
   cheese_array.each do |item|
     counter = 0
+    cheese_types = ["cheddar", "gouda", "camembert"]
     while counter < cheese_types.length
       if cheese_types[counter] == item
         return item
@@ -29,5 +30,5 @@ def find_the_cheese(cheese_array)
   end
 
   # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+  
 end
