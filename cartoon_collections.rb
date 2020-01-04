@@ -18,7 +18,7 @@ end
 
 def find_the_cheese(cheese_array)
   svalue = nil
-  cheese_array.each do |item|
+  cheese_array.collect do |item|
     counter = 0
     cheese_types = ["cheddar", "gouda", "camembert"]
     while counter < cheese_types.length
