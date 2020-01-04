@@ -24,6 +24,7 @@ def find_the_cheese(cheese_array)
     while counter < cheese_types.length
       if cheese_types[counter] == item
         return item
+      else retun nil
       end
       counter +=1
     end
