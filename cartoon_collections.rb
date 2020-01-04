@@ -20,4 +20,6 @@ def find_the_cheese(food_array)
 
     cheese_types = ["cheddar", "gouda", "camembert"]
     food_array.any? { |item| cheese_types.any? { |item| item  }  }
+
+    return item
 end
