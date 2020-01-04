@@ -21,13 +21,11 @@ def find_the_cheese(cheese_array)
   cheese_array.each do |item|
     counter = 0
     while counter < cheese_types.length
-      if cheese_types == item
+      if cheese_types[counter] == item
         return item
       end
       counter +=1
     end
-
-
   end
 
   # the array below is here to help
