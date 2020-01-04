@@ -23,14 +23,10 @@ def find_the_cheese(cheese_array)
     cheese_types = ["cheddar", "gouda", "camembert"]
     while counter < cheese_types.length
       if cheese_types[counter] == item
-        value = item
+        svalue = item
       end
       counter +=1
     end
   end
-
-  value
-
-  # the array below is here to help
-
+  svalue
 end
