@@ -19,7 +19,7 @@ end
 def find_the_cheese(food_array)
     value = nil
     cheese_types = ["cheddar", "gouda", "camembert"]
-    food_array.any? { |item| cheese_types.any? { |item| value = item  }  }
+    food_array.any? { |item| cheese_types.any? { |cheese| cheese == item ? return cheese }  }
 
     return value
 end
