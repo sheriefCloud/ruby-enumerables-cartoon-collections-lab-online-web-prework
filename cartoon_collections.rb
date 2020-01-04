@@ -17,16 +17,7 @@ def long_planeteer_calls(calls_array)
 end
 
 def find_the_cheese(food_array)
-  svalue = nil
-  food_array.collect do |item|
-    counter = 0
+
     cheese_types = ["cheddar", "gouda", "camembert"]
-    while counter < cheese_types.length
-      if cheese_types[counter] == item
-        svalue = item
-      end
-      counter +=1
-    end
-  end
-  svalue
+    food_array.any? { |item| cheese_types.any? { |item| item  }  }
 end
